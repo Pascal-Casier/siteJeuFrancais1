@@ -23,44 +23,29 @@
 
 <!-- À placer AVANT script.js -->
 <script>
-    // Fonction pour charger les questions
-    function loadQuestions(level, dossier) {
-        return new Promise((resolve, reject) => {
-            const script = document.createElement('script');
-            script.src = `questions-${level}-dossier${dossier}.js`;
-            
-            script.onload = () => {
-                if (typeof questions !== 'undefined') {
-                    resolve(questions);
-                } else {
-                    reject(new Error('Questions non définies'));
-                }
-            };
-            
-            script.onerror = () => {
-                reject(new Error('Erreur de chargement'));
-            };
+    // Réinitialisation
+    window.currentQuestions = null;
 
-            document.head.appendChild(script);
-        });
-    }
-
-    // Récupération des paramètres
     const urlParams = new URLSearchParams(window.location.search);
     const level = urlParams.get('level');
     const dossier = urlParams.get('dossier');
 
-    // Chargement et démarrage
-    loadQuestions(level, dossier)
-        .then(() => {
-            // Le fichier est chargé, on peut démarrer le jeu
+    const script = document.createElement('script');
+    script.src = `questions-${level}-dossier${dossier}.js`;
+    
+    script.onload = function() {
+        const key = `${level}-dossier${dossier}`;
+        if (window.quizQuestions && window.quizQuestions[key]) {
+            window.currentQuestions = window.quizQuestions[key];
             startGame();
-        })
-        .catch(error => {
-            console.error(error);
-            alert("Ce dossier d'exercices n'est pas encore disponible.");
+        } else {
+            console.error("Clé non trouvée :", key);
+            alert("Exercices non disponibles. Retour au menu...");
             window.location.href = 'index.html';
-        });
+        }
+    };
+
+    document.head.appendChild(script);
 </script>
 
 <!-- Charger script.js APRÈS -->

@@ -1,4 +1,5 @@
-const questions = [
+window.quizQuestions = window.quizQuestions || {};
+window.quizQuestions[`A1-dossier5`] = [
     // Structures interrogatives (4 questions)
     {
         question: "Transformez : 'Tu aimes le café' (forme interrogative avec inversion)",

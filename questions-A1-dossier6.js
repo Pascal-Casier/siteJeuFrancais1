@@ -1,4 +1,5 @@
-const questions = [
+window.quizQuestions = window.quizQuestions || {};
+window.quizQuestions[`A1-dossier6`] = [
     // Saisons et météo (5 questions)
     {
         question: "Complétez : En ___ , il neige souvent.",

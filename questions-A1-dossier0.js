@@ -1,4 +1,7 @@
-const questions = [
+
+
+window.quizQuestions = window.quizQuestions || {};
+window.quizQuestions[`A1-dossier0`] = [
     // Se présenter (4 questions)
     {
         question: "Complétez : ___ m'appelle Sophie.",

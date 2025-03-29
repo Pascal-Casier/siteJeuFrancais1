@@ -169,7 +169,10 @@ body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
+    /*max-height: 600px; /* Ajustez selon le nombre de dossiers */
+    overflow-y: auto; /* Ajoute une barre de défilement si trop long */
 }
+
 
 .folders-container.visible {
     max-height: 500px;
@@ -310,4 +313,18 @@ body {
     .credit {
         font-size: 0.8rem;
     }
+}
+
+.hidden {
+    display: none;
+}
+
+.folders-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.folders-container:not(.hidden) {
+    max-height: 1000px; /* Ajustez selon vos besoins */
 }

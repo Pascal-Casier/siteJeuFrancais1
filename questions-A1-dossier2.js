@@ -1,4 +1,5 @@
-const questions = [
+window.quizQuestions = window.quizQuestions || {};
+window.quizQuestions[`A1-dossier2`] = [
     // Articles définis/indéfinis (4 questions)
     {
         question: "Complétez : C'est ___ livre et ___ livre est intéressant.",

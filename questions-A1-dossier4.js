@@ -1,4 +1,5 @@
-const questions = [
+window.quizQuestions = window.quizQuestions || {};
+window.quizQuestions[`A1-dossier4`] = [
     // L'heure (4 questions)
     {
         question: "Quelle heure est-il ? (image montre 10:15)",

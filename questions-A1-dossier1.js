@@ -1,4 +1,5 @@
-const questions = [
+window.quizQuestions = window.quizQuestions || {};
+window.quizQuestions[`A1-dossier1`] = [
     // Tu vs Vous
     {
         question: "Complétez : ___ veux un café ? (à un ami)",

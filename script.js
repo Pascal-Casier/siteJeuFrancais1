@@ -3,6 +3,7 @@ let currentQuestion = 0;
 let score = 0;
 let timeLeft = 20;
 let timer;
+let timerInterval = null; // Référence unique à l'intervalle
 let gameActive = true;
 let shuffledQuestions = [];
 let shuffledOptions = [];
@@ -71,13 +72,8 @@ function loadQuestion() {
         return;
     }
 
-    // Réinitialiser le timer pour chaque nouvelle question
-    clearInterval(timer);
-    timeLeft = 20;
-    timeElement.textContent = timeLeft;
-    timeElement.classList.remove('urgent');
-    timer = setInterval(updateTimer, 1000);
-
+    startTimer(); // Utilise la nouvelle fonction de timer
+    
     const q = shuffledQuestions[currentQuestion];
     questionElement.textContent = q.question;
     
@@ -97,7 +93,7 @@ function loadQuestion() {
 function selectOption(index, isCorrect) {
     if (!gameActive) return;
 
-    clearInterval(timer); // Arrêter le timer quand une réponse est sélectionnée
+    clearInterval(timerInterval); // Arrêter le timer quand une réponse est sélectionnée
 
     const options = document.querySelectorAll('.option');
     const currentQ = shuffledQuestions[currentQuestion];
@@ -152,12 +148,51 @@ function prepareNewGame() {
     timeElement.textContent = timeLeft;
 }
 
-// Mettre à jour le timer (fonction unique maintenant)
+function startTimer() {
+    // Nettoie TOUS les intervalles existants
+    clearAllIntervals();
+    
+    timeLeft = 20;
+    updateTimerDisplay();
+    
+    timerInterval = setInterval(() => {
+        timeLeft--;
+        updateTimerDisplay();
+
+        if (timeLeft <= 5) {
+            timeElement.classList.add('urgent');
+        } else {
+            timeElement.classList.remove('urgent');
+        }
+
+        if (timeLeft <= 0) {
+            clearInterval(timerInterval);
+            handleTimeOut();
+        }
+    }, 1000);
+}
+
+function clearAllIntervals() {
+    // Crée un nouvel intervalle avec un ID très élevé
+    const intervalId = setInterval(() => {}, 1000);
+    
+    // Nettoie tous les intervalles existants
+    for (let i = 1; i < intervalId; i++) {
+        clearInterval(i);
+    }
+    
+    // Nettoie le nouvel intervalle créé
+    clearInterval(intervalId);
+    
+    // Réinitialise notre référence
+    timerInterval = null;
+}
+
+
 function updateTimer() {
     timeLeft--;
-    timeElement.textContent = timeLeft;
+    updateTimerDisplay();
 
-    // Gérer l'affichage urgent quand il reste peu de temps
     if (timeLeft <= 5) {
         timeElement.classList.add('urgent');
     } else {
@@ -165,31 +200,34 @@ function updateTimer() {
     }
 
     if (timeLeft <= 0) {
-        clearInterval(timer);
-        timeElement.classList.remove('urgent');
-        
-        const options = document.querySelectorAll('.option');
-        options.forEach(opt => {
-            opt.style.pointerEvents = 'none';
-        });
-        
-        // Trouver et marquer la bonne réponse
-        const correctIndex = shuffledOptions[currentQuestion].findIndex(opt => opt.isCorrect);
-        if (options[correctIndex]) {
-            options[correctIndex].classList.add('correct');
-        }
-        
-        // Afficher l'explication
-        const currentQ = shuffledQuestions[currentQuestion];
-        if (currentQ.explanation) {
-            const explanation = document.createElement('div');
-            explanation.classList.add('explanation');
-            explanation.textContent = currentQ.explanation;
-            optionsElement.appendChild(explanation);
-        }
-        
-        nextButton.style.display = 'block';
+        clearInterval(timerInterval);
+        handleTimeOut();
     }
+}
+
+function updateTimerDisplay() {
+    timeElement.textContent = timeLeft;
+}
+
+function handleTimeOut() {
+    const options = document.querySelectorAll('.option');
+    options.forEach(opt => {
+        opt.style.pointerEvents = 'none';
+    });
+    
+    const correctIndex = shuffledOptions[currentQuestion].findIndex(opt => opt.isCorrect);
+    if (options[correctIndex]) {
+        options[correctIndex].classList.add('correct');
+    }
+    
+    if (shuffledQuestions[currentQuestion].explanation) {
+        const explanation = document.createElement('div');
+        explanation.classList.add('explanation');
+        explanation.textContent = shuffledQuestions[currentQuestion].explanation;
+        optionsElement.appendChild(explanation);
+    }
+    
+    nextButton.style.display = 'block';
 }
 
 // Question suivante
@@ -200,7 +238,7 @@ function nextQuestion() {
 
 // Fin du jeu
 function endGame() {
-    clearInterval(timer);
+    clearAllIntervals(); // Utilisez la nouvelle fonction
     gameActive = false;
     questionElement.textContent = `Jeu terminé! Votre score final est ${score}/${shuffledQuestions.length}`;
     optionsElement.innerHTML = '';
@@ -208,16 +246,17 @@ function endGame() {
 }
 
 function startGame() {
-    // Vérifier qu'on a bien des questions
-    if (questions.length === 0) {
-        console.error("Aucune question chargée !");
+    if (!window.currentQuestions || window.currentQuestions.length === 0) {
+        console.error("Aucune question chargée");
+        alert("Erreur de chargement des questions. Retour au menu...");
+        window.location.href = 'index.html';
         return;
     }
     
-    // Le reste de votre code existant...
+    questions = window.currentQuestions;
     prepareNewGame();
     loadQuestion();
-    timer = setInterval(updateTimer, 1000);
+    // Supprimez cette ligne: timer = setInterval(updateTimer, 1000);
 }
 
 // Bouton de retour au menu
@@ -228,6 +267,10 @@ document.getElementById('backToMenu').addEventListener('click', () => {
     }
 });
 
+script.onerror = function() {
+    alert("Erreur de chargement des exercices. Retour au menu...");
+    window.location.href = 'index.html';
+};
 
 // Événements
 nextButton.addEventListener('click', nextQuestion);

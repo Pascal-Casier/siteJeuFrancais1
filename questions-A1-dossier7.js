@@ -1,4 +1,5 @@
-const questions = [
+window.quizQuestions = window.quizQuestions || {};
+window.quizQuestions[`A1-dossier7`] = [
     // Goûts et consommation alimentaire (5 questions)
     {
         question: "Complétez : J'___ beaucoup les pâtes.",
