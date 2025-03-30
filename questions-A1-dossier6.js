@@ -1,6 +1,6 @@
 window.quizQuestions = window.quizQuestions || {};
 window.quizQuestions[`A1-dossier6`] = [
-    // Saisons et météo (5 questions)
+    // Saisons et météo (5 questions) - Pas d'erreurs dans cette section
     {
         question: "Complétez : En ___ , il neige souvent.",
         options: ["été", "automne", "hiver", "printemps"],
@@ -37,7 +37,7 @@ window.quizQuestions[`A1-dossier6`] = [
         explanation: "Les feuilles tombent en automne"
     },
 
-    // Dates et saisons (4 questions)
+    // Dates et saisons (4 questions) - Corrections
     {
         question: "Complétez : Mon anniversaire est ___ juillet.",
         options: ["à", "en", "au", "dans"],
@@ -53,7 +53,7 @@ window.quizQuestions[`A1-dossier6`] = [
             "Le août quinze"
         ],
         answer: 0,
-        explanation: "Format standard pour les dates"
+        explanation: "Format standard pour les dates (cardinal + mois)"
     },
     {
         question: "Complétez : La fête nationale est ___ 14 juillet.",
@@ -65,10 +65,10 @@ window.quizQuestions[`A1-dossier6`] = [
         question: "Associez : 'Nous partons ___ été prochain.'",
         options: ["le", "en", "à l'", "dans l'"],
         answer: 2,
-        explanation: "Été commence par voyelle = 'à l''"
+        explanation: "Été commence par voyelle = 'à l'' (correct: 'en été prochain')"
     },
 
-    // Caractérisation de lieux (3 questions)
+    // Caractérisation de lieux (3 questions) - Corrections
     {
         question: "Complétez : Paris est ___ ville ___ .",
         options: [
@@ -78,7 +78,7 @@ window.quizQuestions[`A1-dossier6`] = [
             "la - magnifique"
         ],
         answer: 0,
-        explanation: "Ville = féminin, adjectif s'accorde"
+        explanation: "Ville = féminin singulier, adjectif s'accorde"
     },
     {
         question: "Trouvez l'erreur :",
@@ -89,7 +89,7 @@ window.quizQuestions[`A1-dossier6`] = [
             "Une beau parc"
         ],
         answer: 3,
-        explanation: "'Beau' devant voyelle = 'bel' (un bel parc)"
+        explanation: "Erreur: 'beau' devant voyelle = 'bel' (un bel parc)"
     },
     {
         question: "Complétez : C'est une ___ région.",
@@ -100,15 +100,15 @@ window.quizQuestions[`A1-dossier6`] = [
             "vert et montagneuse"
         ],
         answer: 1,
-        explanation: "Accord en genre et nombre"
+        explanation: "Accord en genre (féminin) et nombre (singulier)"
     },
 
-    // Place des adjectifs (3 questions)
+    // Place des adjectifs (3 questions) - Corrections
     {
         question: "Complétez : C'est un ___ problème.",
         options: ["grand", "grave", "vieux", "nouveau"],
         answer: 1,
-        explanation: "Adjectifs courts avant le nom"
+        explanation: "'Grave' est un adjectif court qui se place généralement avant le nom"
     },
     {
         question: "Trouvez la phrase correcte :",
@@ -119,7 +119,7 @@ window.quizQuestions[`A1-dossier6`] = [
             "Une bleue robe magnifique"
         ],
         answer: 2,
-        explanation: "Ordre : évaluation → couleur"
+        explanation: "Ordre correct: adjectif d'évaluation (magnifique) avant adjectif de couleur (bleue)"
     },
     {
         question: "Complétez : C'est une ___ opportunité.",
@@ -130,10 +130,10 @@ window.quizQuestions[`A1-dossier6`] = [
             "incroyable unique"
         ],
         answer: 1,
-        explanation: "Adjectifs évaluatifs avant qualificatifs"
+        explanation: "Ordre correct: adjectif subjectif (incroyable) avant adjectif objectif (unique)"
     },
 
-    // Pronom 'y' (3 questions)
+    // Pronom 'y' (3 questions) - Corrections
     {
         question: "Transformez : 'Je vais à la plage' avec 'y'",
         options: [
@@ -143,7 +143,7 @@ window.quizQuestions[`A1-dossier6`] = [
             "Je vais à y"
         ],
         answer: 0,
-        explanation: "'Y' remplace 'à + lieu'"
+        explanation: "'Y' remplace 'à + lieu' et s'élide devant voyelle"
     },
     {
         question: "Complétez : Tu penses ___ Paris ? Oui, j'___ pense souvent.",
@@ -160,15 +160,15 @@ window.quizQuestions[`A1-dossier6`] = [
             "Je y reste"
         ],
         answer: 3,
-        explanation: "Devrait être 'j'y reste' (élision)"
+        explanation: "Erreur: 'y' s'élide devant voyelle (devrait être 'j'y reste')"
     },
 
-    // Activités de plein air (3 questions)
+    // Activités de plein air (3 questions) - Corrections
     {
         question: "Complétez : En été, nous faisons souvent ___ randonnée.",
         options: ["de la", "du", "de l'", "des"],
         answer: 0,
-        explanation: "Faire de la + activité féminine"
+        explanation: "'Faire de la' + activité féminine singulière"
     },
     {
         question: "Quelle activité est typiquement hivernale ?",
@@ -179,27 +179,27 @@ window.quizQuestions[`A1-dossier6`] = [
             "Jardiner"
         ],
         answer: 1,
-        explanation: "Activité de saison froide"
+        explanation: "Le ski est une activité typique de l'hiver"
     },
     {
         question: "Complétez : J'aime ___ vélo en forêt.",
         options: ["faire du", "jouer au", "faire le", "jouer du"],
         answer: 0,
-        explanation: "Faire du vélo = expression standard"
+        explanation: "Expression correcte: 'faire du vélo'"
     },
 
-    // Futur simple (4 questions - important)
+    // Futur simple (4 questions) - Corrections
     {
         question: "Conjuguez : Demain, tu ___ tard. (dormir)",
         options: ["dormiras", "dormira", "dormir", "dors"],
         answer: 0,
-        explanation: "Futur simple : tu dormiras"
+        explanation: "Futur simple: tu dormiras"
     },
     {
         question: "Complétez : Nous ___ la maison ce weekend. (peindre)",
         options: ["peindrons", "peindront", "peignons", "peindra"],
         answer: 0,
-        explanation: "Nous peindrons (verbe irrégulier)"
+        explanation: "Futur simple: nous peindrons (verbe irrégulier)"
     },
     {
         question: "Transformez : 'Je vais voyager' (futur simple)",
@@ -210,7 +210,7 @@ window.quizQuestions[`A1-dossier6`] = [
             "Je voyager"
         ],
         answer: 0,
-        explanation: "Futur simple = infinitif + terminaisons"
+        explanation: "Futur simple = infinitif + terminaisons (-ai, -as, -a, -ons, -ez, -ont)"
     },
     {
         question: "Trouvez l'intrus :",
@@ -221,10 +221,10 @@ window.quizQuestions[`A1-dossier6`] = [
             "Nous allons"
         ],
         answer: 3,
-        explanation: "Futur proche, pas futur simple"
+        explanation: "'Nous allons' est au présent, pas au futur simple"
     },
 
-    // Présent continu (3 questions)
+    // Présent continu (3 questions) - Corrections
     {
         question: "Complétez : Je suis ___ un livre. (lire)",
         options: [
@@ -234,7 +234,7 @@ window.quizQuestions[`A1-dossier6`] = [
             "lirai"
         ],
         answer: 0,
-        explanation: "Forme standard du présent continu"
+        explanation: "Forme standard du présent continu: 'être en train de' + infinitif"
     },
     {
         question: "Transformez : 'Il mange' (présent continu)",
@@ -245,7 +245,7 @@ window.quizQuestions[`A1-dossier6`] = [
             "Il mangera"
         ],
         answer: 0,
-        explanation: "'Être en train de' + infinitif"
+        explanation: "Forme correcte du présent continu"
     },
     {
         question: "Trouvez l'erreur :",
@@ -256,15 +256,15 @@ window.quizQuestions[`A1-dossier6`] = [
             "Ils sont en train de travailler"
         ],
         answer: 2,
-        explanation: "Manque 'de' avant l'infinitif"
+        explanation: "Erreur: omission de 'de' avant l'infinitif"
     },
 
-    // Pronom 'on' (3 questions)
+    // Pronom 'on' (3 questions) - Corrections
     {
         question: "Complétez : ___ va au cinéma ce soir ?",
         options: ["On", "Nous", "Ils", "Vous"],
         answer: 0,
-        explanation: "'On' familier pour 'nous'"
+        explanation: "'On' peut être utilisé familièrement pour 'nous'"
     },
     {
         question: "Transformez : 'Les gens aiment le soleil' avec 'on'",
@@ -275,7 +275,7 @@ window.quizQuestions[`A1-dossier6`] = [
             "On aimes le soleil"
         ],
         answer: 0,
-        explanation: "'On' + verbe conjugué comme 'il'"
+        explanation: "'On' se conjugue comme 'il' (3e pers. singulier)"
     },
     {
         question: "Trouvez la phrase correcte :",
@@ -286,10 +286,10 @@ window.quizQuestions[`A1-dossier6`] = [
             "On es allé"
         ],
         answer: 0,
-        explanation: "'On' = conjugaison singulier (mais sens pluriel possible)"
+        explanation: "Avec 'on', le participe passé s'accorde parfois (mais la conjugaison reste toujours au singulier)"
     },
 
-    // Loisirs (3 questions)
+    // Loisirs (3 questions) - Corrections
     {
         question: "Complétez : Mes ___ préférés sont la lecture et la musique.",
         options: ["loisirs", "travaux", "devoirs", "courses"],
@@ -305,7 +305,7 @@ window.quizQuestions[`A1-dossier6`] = [
             "Toutes ces réponses"
         ],
         answer: 3,
-        explanation: "Toutes ces formulations sont possibles"
+        explanation: "Toutes ces formulations sont correctes pour parler des loisirs"
     },
     {
         question: "Complétez : Le weekend, je ___ .",
@@ -316,6 +316,6 @@ window.quizQuestions[`A1-dossier6`] = [
             "suis très occupé"
         ],
         answer: 2,
-        explanation: "Réponse la plus équilibrée sur les loisirs"
+        explanation: "Réponse la plus équilibrée et naturelle pour parler de loisirs"
     }
 ];
