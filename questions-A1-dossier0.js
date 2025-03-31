@@ -42,30 +42,30 @@ window.quizQuestions[`A1-dossier0`] = [
     {
         question: "Quelle question est correcte ?",
         options: [
-            "Tu es qui ?",
+            "Tu es quoi ?",
             "Comment tu t'appelles ?",
             "Tu es comment ?",
-            "Tu fais quoi ?"
+            "Tu fais qui ?"
         ],
         answer: 1,
         explanation: "Forme standard pour demander le nom."
     },
     {
-        question: "Répondez à 'Tu es français ?' si vous venez du Portugal :",
+        question: "Répondez à 'Tu es français ?' si vous venez du Brésil :",
         options: [
             "Oui, je suis français",
-            "Non, je suis portugais",
-            "Je parle français",
+            "Non, je suis brésilien",
+            "Je parle portugais",
             "Je ne sais pas"
         ],
         answer: 1,
         explanation: "Réponse négative avec nationalité correcte."
     },
     {
-        question: "Complétez : ___ est-ce que tu viens ?",
-        options: ["Où", "Comment", "Quand", "Pourquoi"],
+        question: "Complétez : ___ est-ce que tu viens ? (pour indiquer l'origine)",
+        options: ["D'où", "Comment", "Quand", "Pourquoi"],
         answer: 0,
-        explanation: "'D'où' serait encore mieux mais 'Où' est acceptable."
+        explanation: "'D'où' indique l'origine."
     },
 
     // Nombres 0-69 (3 questions)
@@ -97,18 +97,29 @@ window.quizQuestions[`A1-dossier0`] = [
         answer: 3,
         explanation: "16 se dit 'seize'."
     },
+    {
+        question: "Écrivez en lettres : 61",
+        options: [
+            "sixante-un",
+            "soixante-un",
+            "soixante et un",
+            "sixante et un"
+        ],
+        answer: 2,
+        explanation: "La forme correcte est soixante et un."
+    },
 
     // Communiquer en classe (2 questions)
     {
-        question: "Que dit un professeur pour demander le silence ?",
+        question: "Quelle formule est correcte ?",
         options: [
-            "Écoutez bien !",
-            "Taisez-vous !",
-            "Regardez moi !",
-            "Levez la main !"
+            "Je pas comprends !",
+            "Je ne comprends pas!",
+            "Je regarde pas !",
+            "Je regarde plus !"
         ],
         answer: 1,
-        explanation: "Formulation directe pour le silence."
+        explanation: "Formulation directe pour une incompréhension."
     },
     {
         question: "Comment demander la traduction de 'book' poliment ?",
@@ -129,6 +140,14 @@ window.quizQuestions[`A1-dossier0`] = [
         answer: 2,
         explanation: "Vous êtes = 2e personne du pluriel."
     },
+
+    {
+        question: "Conjuguez : On ___ brésilien. (être)",
+        options: ["es", "est", "êtes", "sommes"],
+        answer: 1,
+        explanation: "On est = 3e personne du singulier."
+    },
+
     {
         question: "Transformez à la forme négative : 'Tu t'appelles Pierre'",
         options: [
@@ -143,39 +162,39 @@ window.quizQuestions[`A1-dossier0`] = [
 
     // Articles définis (2 questions)
     {
-        question: "Complétez : ___ ami Pierre est gentil.",
-        options: ["Un", "Le", "La", "Des"],
+        question: "Complétez : ___ ami de Pierre est gentil.",
+        options: ["Un", "L'", "La", "Des"],
         answer: 1,
-        explanation: "Article défini pour quelqu'un de spécifique."
+        explanation: "Le -> l' devant une voyelle."
     },
     {
         question: "Trouvez l'erreur d'article :",
         options: [
             "la table",
-            "le chaise",
-            "les cahiers",
-            "l'ordinateur"
+            "le révolution",
+            "les livres",
+            "l'hôtel"
         ],
         answer: 1,
-        explanation: "'Chaise' est féminin : 'la chaise'."
+        explanation: "'Révolution' est féminin : 'la révolution'."
     },
 
     // Genre des pays (1 question)
     {
-        question: "Complétez : Je viens ___ France",
-        options: ["au", "en", "à la", "aux"],
+        question: "Complétez : Elle est ___ .",
+        options: ["américain", "américaine", "américainne", "amériqueine"],
         answer: 1,
-        explanation: "Pays féminin = 'en'."
+        explanation: "américain, américaine."
     },
 
     // Langues (1 question)
     {
-        question: "Complétez : Il parle ___ et ___ (anglais + espagnol)",
+        question: "Complétez : Il parle ___ et ___ .",
         options: [
-            "anglais - espagnol",
+            "anglaise - espagnole",
             "l'anglais - l'espagnol",
-            "l'anglais - espagnol",
-            "anglais - l'espagnol"
+            "l'anglai - espagnolle",
+            "anglai - l'espagnole"
         ],
         answer: 1,
         explanation: "Avec 'parler', on utilise l'article défini pour les langues."
