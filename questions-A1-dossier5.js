@@ -23,11 +23,11 @@ window.quizQuestions[`A1-dossier5`] = [
         options: [
             "Quand part-il ?",
             "Où vas-tu ?",
-            "Pourquoi mange-tu ?",
+            "Pourquoi est-ce que manges-tu ?",
             "Comment allez-vous ?"
         ],
         answer: 2,
-        explanation: "Pas d'inversion après 'pourquoi' (forme correcte : 'Pourquoi tu manges ?')"
+        explanation: "Pas d'inversion après 'est-ce que'"
     },
     {
         question: "Complétez : ___ heure est-il ?",
@@ -126,7 +126,6 @@ window.quizQuestions[`A1-dossier5`] = [
     {
         question: "Complétez : Pierre et Marie ___ téléphonent souvent.",
         options: ["se", "s'", "te", "me"],
-        answer: 1,
         answer: 0,
         explanation: "Pronom réciproque 'se' pour deux personnes"
     },
@@ -298,7 +297,7 @@ window.quizQuestions[`A1-dossier5`] = [
     },
     {
         question: "Complétez : ___ en vacances.",
-        options: ["C'est", "Il est", "Elle est", "On est"],
+        options: ["C'est", "Il est", "Elle a", "On a"],
         answer: 1,
         explanation: "Situation personnelle = 'il est'"
     },

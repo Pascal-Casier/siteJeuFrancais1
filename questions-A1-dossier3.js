@@ -40,17 +40,7 @@ window.quizQuestions[`A1-dossier3`] = [
         answer: 0,
         explanation: "Négation standard avec 'bien' conservé"
     },
-    {
-        question: "Associez : 'J\'aime ___ la natation ___ la danse.'",
-        options: [
-            "et - et",
-            "mais - et",
-            "ni - ni",
-            "ou - ou"
-        ],
-        answer: 3,
-        explanation: "'Ou' pour exprimer des alternatives"
-    },
+  
     {
         question: "Répondez : 'Tu aimes voyager ?' (réponse négative)",
         options: [
@@ -73,7 +63,7 @@ window.quizQuestions[`A1-dossier3`] = [
     {
         question: "Quelle question est correcte ?",
         options: [
-            "Quel est ton travail ?",
+            "Quel est ton travailler ?",
             "Qu'est-ce que tu fais comme travail ?",
             "Tu es quoi comme métier ?",
             "Comment tu travailles ?"
@@ -88,7 +78,7 @@ window.quizQuestions[`A1-dossier3`] = [
         explanation: "Profession familiale = 'être'"
     },
     {
-        question: "Trouvez l'intrus :",
+        question: "Trouvez l'erreur :",
         options: [
             "Je suis étudiant",
             "Je travaille dans un bureau",
@@ -180,7 +170,7 @@ window.quizQuestions[`A1-dossier3`] = [
     // Centres d'intérêt (3 questions)
     {
         question: "Complétez : Mon ___ principal, c'est la lecture.",
-        options: ["intérêt", "passion", "loisir", "centre d'intérêt"],
+        options: ["jeu", "passion", "loisir", "but"],
         answer: 2,
         explanation: "'Loisir' est le terme standard"
     },
@@ -194,17 +184,6 @@ window.quizQuestions[`A1-dossier3`] = [
         ],
         answer: 3,
         explanation: "Toutes ces formulations sont correctes"
-    },
-    {
-        question: "Associez : J'aime ___ la guitare ___ le chant.",
-        options: [
-            "et - et",
-            "mais - et",
-            "ni - ni",
-            "et - mais"
-        ],
-        answer: 3,
-        explanation: "'Et' pour ajouter, 'mais' pour contraster"
     },
 
     // Pronoms toniques (5 questions - important)
@@ -239,23 +218,23 @@ window.quizQuestions[`A1-dossier3`] = [
     },
     {
         question: "Complétez : Elle pense souvent à ___.",
-        options: ["lui", "il", "elle", "le"],
+        options: ["lui", "il", "tu", "le"],
         answer: 0,
         explanation: "Après préposition = pronom tonique"
     },
 
     // Famille et possessifs (6 questions - important)
     {
-        question: "Complétez : ___ père est ingénieur. (féminin)",
+        question: "Complétez : ___ père est ingénieur. (possesseur féminin)",
         options: ["Mon", "Ma", "Mes", "Ton"],
         answer: 0,
         explanation: "'Père' est masculin, donc 'mon'"
     },
     {
-        question: "Complétez : Voici ___ sœur. (pluriel)",
+        question: "Complétez : Voici ___ sœur. (possesseur pluriel)",
         options: ["notre", "nos", "vos", "leur"],
-        answer: 1,
-        explanation: "Pour plusieurs sœurs = 'nos'"
+        answer: 0,
+        explanation: "Nous avons UNE soeur."
     },
     {
         question: "Trouvez l'intrus :",
@@ -274,17 +253,7 @@ window.quizQuestions[`A1-dossier3`] = [
         answer: 0,
         explanation: "Possession + 'mère' est féminin"
     },
-    {
-        question: "Répondez : 'C'est ton chien ?' (négatif)",
-        options: [
-            "Non, c'est le sien",
-            "Non, c'est leur",
-            "Non, c'est à moi",
-            "Non, c'est de lui"
-        ],
-        answer: 0,
-        explanation: "'Le sien' = pronom possessif"
-    },
+  
     {
         question: "Complétez : ___ parents habitent à Lyon.",
         options: ["Ses", "Son", "Sa", "Soi"],

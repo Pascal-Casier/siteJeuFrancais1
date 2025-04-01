@@ -5,23 +5,23 @@ window.quizQuestions[`A1-dossier4`] = [
         question: "Quelle heure est-il ? (image montre 10:15)",
         options: [
             "Dix heures et quart",
-            "Dix heures quinze",
+            "Dix quinze",
             "Onze heures moins le quart",
-            "Les deux premières réponses"
+            "Aucune de ces propositions"
         ],
-        answer: 3,
+        answer: 0,
         explanation: "10:15 peut se dire 'dix heures et quart' ou 'dix heures quinze'"
     },
     {
-        question: "Complétez : Il est ___ (14:30)",
+        question: "Complétez : Il est ___ (14:45)",
         options: [
-            "deux heures et demie",
-            "quatorze heures trente",
-            "trois heures moins trente",
-            "Les deux premières réponses"
+            "deux heures quarante-cinq",
+            "quatorze heures quarante-cinq",
+            "trois heures moins le quart",
+            "Toutes ces réponses"
         ],
         answer: 3,
-        explanation: "Formats acceptés : 12h (et demie) ou 24h (trente)"
+        explanation: "Toutes ces propositions sont correctes"
     },
     {
         question: "Transformez en format 24h : 'Neuf heures moins le quart du soir'",
@@ -33,7 +33,7 @@ window.quizQuestions[`A1-dossier4`] = [
         question: "Trouvez l'erreur :",
         options: [
             "Il est quatre heures",
-            "Il est midi et demi",
+            "Il est midi et demis",
             "Il est minuit vingt",
             "Il est une heure et quart"
         ],
@@ -78,7 +78,7 @@ window.quizQuestions[`A1-dossier4`] = [
         options: [
             "Il faut tu étudies",
             "Il faut étudier",
-            "Il faut que tu étudies",
+            "Il faut tu étudier",
             "Il faut d'étudier"
         ],
         answer: 1,
@@ -93,10 +93,10 @@ window.quizQuestions[`A1-dossier4`] = [
         explanation: "Devoir au présent : nous devons"
     },
     {
-        question: "Complétez : ___ -je vous aider ?",
-        options: ["Peux", "Peut", "Pouvoir", "Puis"],
+        question: "Complétez : -je ___  vous aider ?",
+        options: ["Peux", "Peut", "Pouvoir", "Poux"],
         answer: 3,
-        explanation: "Forme interrogative spéciale : 'puis-je'"
+        explanation: "Je peux est la forme correcte'"
     },
     {
         question: "Complétez : Je ___ venir avec toi !",
@@ -159,21 +159,11 @@ window.quizQuestions[`A1-dossier4`] = [
     },
 
     // Expression du temps (2 questions)
-    {
-        question: "Complétez : ___ je vais à la gym.",
-        options: [
-            "Hier",
-            "Le lundi",
-            "Demain",
-            "Toutes ces réponses"
-        ],
-        answer: 1,
-        explanation: "'Le lundi' indique une habitude hebdomadaire"
-    },
+  
     {
         question: "Trouvez l'expression de régularité :",
         options: [
-            "Parfois",
+            "Après",
             "Tous les jours",
             "La semaine dernière",
             "Bientôt"

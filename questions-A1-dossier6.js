@@ -62,10 +62,10 @@ window.quizQuestions[`A1-dossier6`] = [
         explanation: "Date précise = article défini 'le'"
     },
     {
-        question: "Associez : 'Nous partons ___ été prochain.'",
+        question: "Associez : 'Nous partons ___ été.'",
         options: ["le", "en", "à l'", "dans l'"],
-        answer: 2,
-        explanation: "Été commence par voyelle = 'à l'' (correct: 'en été prochain')"
+        answer: 1,
+        explanation: "Été commence par voyelle = 'en'"
     },
 
     // Caractérisation de lieux (3 questions) - Corrections
@@ -86,10 +86,10 @@ window.quizQuestions[`A1-dossier6`] = [
             "Un petit village",
             "Une grande forêt",
             "Un vieux château",
-            "Une beau parc"
+            "Un beau appartement"
         ],
         answer: 3,
-        explanation: "Erreur: 'beau' devant voyelle = 'bel' (un bel parc)"
+        explanation: "Erreur: 'beau' devant voyelle = 'bel'"
     },
     {
         question: "Complétez : C'est une ___ région.",
@@ -104,12 +104,7 @@ window.quizQuestions[`A1-dossier6`] = [
     },
 
     // Place des adjectifs (3 questions) - Corrections
-    {
-        question: "Complétez : C'est un ___ problème.",
-        options: ["grand", "grave", "vieux", "nouveau"],
-        answer: 1,
-        explanation: "'Grave' est un adjectif court qui se place généralement avant le nom"
-    },
+
     {
         question: "Trouvez la phrase correcte :",
         options: [
@@ -121,17 +116,7 @@ window.quizQuestions[`A1-dossier6`] = [
         answer: 2,
         explanation: "Ordre correct: adjectif d'évaluation (magnifique) avant adjectif de couleur (bleue)"
     },
-    {
-        question: "Complétez : C'est une ___ opportunité.",
-        options: [
-            "unique et incroyable",
-            "incroyable et unique",
-            "unique incroyable",
-            "incroyable unique"
-        ],
-        answer: 1,
-        explanation: "Ordre correct: adjectif subjectif (incroyable) avant adjectif objectif (unique)"
-    },
+  
 
     // Pronom 'y' (3 questions) - Corrections
     {
@@ -190,13 +175,13 @@ window.quizQuestions[`A1-dossier6`] = [
 
     // Futur simple (4 questions) - Corrections
     {
-        question: "Conjuguez : Demain, tu ___ tard. (dormir)",
+        question: "Conjuguez : Demain, tu ___ tard. (dormir au futur simple)",
         options: ["dormiras", "dormira", "dormir", "dors"],
         answer: 0,
         explanation: "Futur simple: tu dormiras"
     },
     {
-        question: "Complétez : Nous ___ la maison ce weekend. (peindre)",
+        question: "Complétez : Nous ___ la maison ce weekend. (peindre au futur simple)",
         options: ["peindrons", "peindront", "peignons", "peindra"],
         answer: 0,
         explanation: "Futur simple: nous peindrons (verbe irrégulier)"
@@ -306,16 +291,6 @@ window.quizQuestions[`A1-dossier6`] = [
         ],
         answer: 3,
         explanation: "Toutes ces formulations sont correctes pour parler des loisirs"
-    },
-    {
-        question: "Complétez : Le weekend, je ___ .",
-        options: [
-            "travaille beaucoup",
-            "dors toute la journée",
-            "me repose et je sors",
-            "suis très occupé"
-        ],
-        answer: 2,
-        explanation: "Réponse la plus équilibrée et naturelle pour parler de loisirs"
     }
+
 ];

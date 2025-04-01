@@ -19,7 +19,7 @@ window.quizQuestions[`A1-dossier2`] = [
         explanation: "'Table' est féminin : 'une table'"
     },
     {
-        question: "Complétez : J'ai ___ ordinateur et ___ souris neuve.",
+        question: "Complétez : J'ai ___ ordinateur et ___ nouvelle télévision.",
         options: ["un - une", "le - la", "un - la", "l' - une"],
         answer: 0,
         explanation: "Les deux objets sont mentionnés pour la première fois (indéfinis)"
@@ -64,12 +64,12 @@ window.quizQuestions[`A1-dossier2`] = [
     // Pourquoi/Parce que (2 questions)
     {
         question: "Complétez : -Pourquoi pleures-tu ? - ___ je suis triste.",
-        options: ["Car", "Parce que", "Pour", "Donc"],
+        options: ["Où", "Parce que", "Pour", "Donc"],
         answer: 1,
         explanation: "La réponse standard à 'pourquoi' est 'parce que'"
     },
     {
-        question: "Transformez : 'Il mange car il a faim' avec 'parce que'",
+        question: "Transformez : 'Il a faim, alors il mange' avec 'parce que'",
         options: [
             "Il mange parce que il a faim",
             "Il mange parce qu'il a faim",
@@ -129,7 +129,7 @@ window.quizQuestions[`A1-dossier2`] = [
             "Je ne prends pas le bus",
             "Je ne prend pas le bus",
             "Je ne prenons pas le bus",
-            "Je ne prends pas de bus"
+            "Je ne prends pas du bus"
         ],
         answer: 0,
         explanation: "Négation standard avec 'prendre'"
@@ -143,7 +143,7 @@ window.quizQuestions[`A1-dossier2`] = [
         explanation: "Transport fermé = 'en'"
     },
     {
-        question: "Complétez : Il va ___ vélo",
+        question: "Complétez : Il va ___ vélo au cinéma.",
         options: ["à", "en", "au", "sur"],
         answer: 0,
         explanation: "Transport ouvert = 'à'"
@@ -153,7 +153,7 @@ window.quizQuestions[`A1-dossier2`] = [
         options: [
             "en voiture",
             "à pied",
-            "en moto",
+            "en avion",
             "à train"
         ],
         answer: 3,
@@ -194,7 +194,7 @@ window.quizQuestions[`A1-dossier2`] = [
         explanation: "Nous venons"
     },
     {
-        question: "Formez la question : '___ tu viens ?'",
+        question: "Formez la question : '___ tu viens ?' (exprime l'origine)",
         options: ["Où", "D'où", "Comment", "Quand"],
         answer: 1,
         explanation: "Pour l'origine, on utilise 'd'où'"
