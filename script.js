@@ -15,7 +15,8 @@ const musicToggle = document.getElementById('musicToggle');
 let isMusicPlaying = false;
 
 // Charger une musique par défaut (vous pouvez remplacer par votre propre fichier)
-backgroundMusic.src = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3';
+backgroundMusic.src = 'Enchanted Grove.m4a';
+//backgroundMusic.src = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3';
 backgroundMusic.volume = 0.3; // Réduire le volume
 
 // Gestionnaire pour le bouton musique
